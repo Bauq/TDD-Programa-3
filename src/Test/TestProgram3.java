@@ -26,7 +26,7 @@ public class TestProgram3 {
 	}
 
 	@Test
-	public void testAverage() {
+	public void test1Average() {
 		doublyLinkedList.insertEnd(6);
 		doublyLinkedList.insertEnd(6);
 		doublyLinkedList.insertEnd(8.3333);
@@ -45,7 +45,7 @@ public class TestProgram3 {
 	}
 	
 	@Test
-	public void testVariance() {
+	public void test1Variance() {
 		doublyLinkedList.insertEnd(6);
 		doublyLinkedList.insertEnd(6);
 		doublyLinkedList.insertEnd(8.3333);
@@ -64,7 +64,7 @@ public class TestProgram3 {
 	}
 	
 	@Test
-	public void testStandardDeviation() {
+	public void test1StandardDeviation() {
 		doublyLinkedList.insertEnd(6);
 		doublyLinkedList.insertEnd(6);
 		doublyLinkedList.insertEnd(8.3333);
@@ -83,7 +83,7 @@ public class TestProgram3 {
 	}
 	
 	@Test
-	public void tesVS() {
+	public void tes1VS() {
 		doublyLinkedList.insertEnd(6);
 		doublyLinkedList.insertEnd(6);
 		doublyLinkedList.insertEnd(8.3333);
@@ -102,7 +102,7 @@ public class TestProgram3 {
 	}
 
 	@Test
-	public void tesS() {
+	public void tes1S() {
 		doublyLinkedList.insertEnd(6);
 		doublyLinkedList.insertEnd(6);
 		doublyLinkedList.insertEnd(8.3333);
@@ -121,7 +121,7 @@ public class TestProgram3 {
 	}
 	
 	@Test
-	public void tesM() {
+	public void tes1M() {
 		doublyLinkedList.insertEnd(6);
 		doublyLinkedList.insertEnd(6);
 		doublyLinkedList.insertEnd(8.3333);
@@ -140,7 +140,7 @@ public class TestProgram3 {
 	}
 	
 	@Test
-	public void tesL() {
+	public void tes1L() {
 		doublyLinkedList.insertEnd(6);
 		doublyLinkedList.insertEnd(6);
 		doublyLinkedList.insertEnd(8.3333);
@@ -159,7 +159,7 @@ public class TestProgram3 {
 	}
 	
 	@Test
-	public void tesVL() {
+	public void tes1VL() {
 		doublyLinkedList.insertEnd(6);
 		doublyLinkedList.insertEnd(6);
 		doublyLinkedList.insertEnd(8.3333);
@@ -176,4 +176,185 @@ public class TestProgram3 {
 		result = calculator.VL(doublyLinkedList);
 		assertEquals(61.7137, result, 0.0001);
 	}
+	
+	/*
+	 * Test 2
+	 */
+	
+	@Test
+	public void test2Average() {
+		doublyLinkedList.insertEnd(7);
+		doublyLinkedList.insertEnd(12);
+		doublyLinkedList.insertEnd(10);
+		doublyLinkedList.insertEnd(12);
+		doublyLinkedList.insertEnd(10);
+		doublyLinkedList.insertEnd(12);
+		doublyLinkedList.insertEnd(12);
+		doublyLinkedList.insertEnd(12);
+		doublyLinkedList.insertEnd(12);
+		doublyLinkedList.insertEnd(8);
+		doublyLinkedList.insertEnd(8);
+		doublyLinkedList.insertEnd(8);
+		doublyLinkedList.insertEnd(20);
+		doublyLinkedList.insertEnd(14);
+		doublyLinkedList.insertEnd(18);
+		doublyLinkedList.insertEnd(12);
+		result = calculator.average(doublyLinkedList);
+		assertEquals(2.4193, result, 0.0001);
+	}
+	
+	@Test
+	public void test2Variance() {
+		doublyLinkedList.insertEnd(7);
+		doublyLinkedList.insertEnd(12);
+		doublyLinkedList.insertEnd(10);
+		doublyLinkedList.insertEnd(12);
+		doublyLinkedList.insertEnd(10);
+		doublyLinkedList.insertEnd(12);
+		doublyLinkedList.insertEnd(12);
+		doublyLinkedList.insertEnd(12);
+		doublyLinkedList.insertEnd(12);
+		doublyLinkedList.insertEnd(8);
+		doublyLinkedList.insertEnd(8);
+		doublyLinkedList.insertEnd(8);
+		doublyLinkedList.insertEnd(20);
+		doublyLinkedList.insertEnd(14);
+		doublyLinkedList.insertEnd(18);
+		doublyLinkedList.insertEnd(12);
+		result = calculator.variance(doublyLinkedList);
+		assertEquals(0.0820, result, 0.0001);
+	}
+	
+	@Test
+	public void test2StandardDeviation() {
+		doublyLinkedList.insertEnd(7);
+		doublyLinkedList.insertEnd(12);
+		doublyLinkedList.insertEnd(10);
+		doublyLinkedList.insertEnd(12);
+		doublyLinkedList.insertEnd(10);
+		doublyLinkedList.insertEnd(12);
+		doublyLinkedList.insertEnd(12);
+		doublyLinkedList.insertEnd(12);
+		doublyLinkedList.insertEnd(12);
+		doublyLinkedList.insertEnd(8);
+		doublyLinkedList.insertEnd(8);
+		doublyLinkedList.insertEnd(8);
+		doublyLinkedList.insertEnd(20);
+		doublyLinkedList.insertEnd(14);
+		doublyLinkedList.insertEnd(18);
+		doublyLinkedList.insertEnd(12);
+		result = calculator.standardDeviation(doublyLinkedList);
+		assertEquals(0.2864, result, 0.0001);
+	}
+	
+	@Test
+	public void tes2VS() {
+		doublyLinkedList.insertEnd(7);
+		doublyLinkedList.insertEnd(12);
+		doublyLinkedList.insertEnd(10);
+		doublyLinkedList.insertEnd(12);
+		doublyLinkedList.insertEnd(10);
+		doublyLinkedList.insertEnd(12);
+		doublyLinkedList.insertEnd(12);
+		doublyLinkedList.insertEnd(12);
+		doublyLinkedList.insertEnd(12);
+		doublyLinkedList.insertEnd(8);
+		doublyLinkedList.insertEnd(8);
+		doublyLinkedList.insertEnd(8);
+		doublyLinkedList.insertEnd(20);
+		doublyLinkedList.insertEnd(14);
+		doublyLinkedList.insertEnd(18);
+		doublyLinkedList.insertEnd(12);
+		result = calculator.VS(doublyLinkedList);
+		assertEquals(6.3375, result, 0.0001);
+	}
+
+	@Test
+	public void tes2S() {
+		doublyLinkedList.insertEnd(7);
+		doublyLinkedList.insertEnd(12);
+		doublyLinkedList.insertEnd(10);
+		doublyLinkedList.insertEnd(12);
+		doublyLinkedList.insertEnd(10);
+		doublyLinkedList.insertEnd(12);
+		doublyLinkedList.insertEnd(12);
+		doublyLinkedList.insertEnd(12);
+		doublyLinkedList.insertEnd(12);
+		doublyLinkedList.insertEnd(8);
+		doublyLinkedList.insertEnd(8);
+		doublyLinkedList.insertEnd(8);
+		doublyLinkedList.insertEnd(20);
+		doublyLinkedList.insertEnd(14);
+		doublyLinkedList.insertEnd(18);
+		doublyLinkedList.insertEnd(12);
+		result = calculator.S(doublyLinkedList);
+		assertEquals(8.4393, result, 0.0001);
+	}
+	
+	@Test
+	public void tes2M() {
+		doublyLinkedList.insertEnd(7);
+		doublyLinkedList.insertEnd(12);
+		doublyLinkedList.insertEnd(10);
+		doublyLinkedList.insertEnd(12);
+		doublyLinkedList.insertEnd(10);
+		doublyLinkedList.insertEnd(12);
+		doublyLinkedList.insertEnd(12);
+		doublyLinkedList.insertEnd(12);
+		doublyLinkedList.insertEnd(12);
+		doublyLinkedList.insertEnd(8);
+		doublyLinkedList.insertEnd(8);
+		doublyLinkedList.insertEnd(8);
+		doublyLinkedList.insertEnd(20);
+		doublyLinkedList.insertEnd(14);
+		doublyLinkedList.insertEnd(18);
+		doublyLinkedList.insertEnd(12);
+		result = calculator.M(doublyLinkedList);
+		assertEquals(11.2381, result, 0.0001);
+	}
+	
+	@Test
+	public void tes2L() {
+		doublyLinkedList.insertEnd(7);
+		doublyLinkedList.insertEnd(12);
+		doublyLinkedList.insertEnd(10);
+		doublyLinkedList.insertEnd(12);
+		doublyLinkedList.insertEnd(10);
+		doublyLinkedList.insertEnd(12);
+		doublyLinkedList.insertEnd(12);
+		doublyLinkedList.insertEnd(12);
+		doublyLinkedList.insertEnd(12);
+		doublyLinkedList.insertEnd(8);
+		doublyLinkedList.insertEnd(8);
+		doublyLinkedList.insertEnd(8);
+		doublyLinkedList.insertEnd(20);
+		doublyLinkedList.insertEnd(14);
+		doublyLinkedList.insertEnd(18);
+		doublyLinkedList.insertEnd(12);
+		result = calculator.L(doublyLinkedList);
+		assertEquals(14.9650, result, 0.0001);
+	}
+	
+	@Test
+	public void tes2VL() {
+		doublyLinkedList.insertEnd(7);
+		doublyLinkedList.insertEnd(12);
+		doublyLinkedList.insertEnd(10);
+		doublyLinkedList.insertEnd(12);
+		doublyLinkedList.insertEnd(10);
+		doublyLinkedList.insertEnd(12);
+		doublyLinkedList.insertEnd(12);
+		doublyLinkedList.insertEnd(12);
+		doublyLinkedList.insertEnd(12);
+		doublyLinkedList.insertEnd(8);
+		doublyLinkedList.insertEnd(8);
+		doublyLinkedList.insertEnd(8);
+		doublyLinkedList.insertEnd(20);
+		doublyLinkedList.insertEnd(14);
+		doublyLinkedList.insertEnd(18);
+		doublyLinkedList.insertEnd(12);
+		result = calculator.VL(doublyLinkedList);
+		assertEquals(19.9280, result, 0.0001);
+	}
+	
 }

@@ -29,16 +29,8 @@ public class Calculator {
 	}
 
 	public double standardDeviation(DoublyLinkedList numbers) {
-		double sum = 0, deviation = 0, mean;
-		if (numbers.size() > 1) {
-			mean = this.average(numbers);
-			for (int i = 0; i < numbers.size(); i++) {
-				sum += Math.pow(Math.log(numbers.getDataInElement(i)) - mean, 2);
-			}
-			deviation = Math.sqrt(sum / (numbers.size() - 1));
-		} else {
-			deviation = 0;
-		}
+		double deviation = 0;
+		deviation = Math.sqrt(this.variance(numbers));
 		return deviation;
 	}
 
@@ -91,5 +83,6 @@ public class Calculator {
 		VL = Math.exp(lnVL);
 		return VL;
 	}
+	
 	
 }
